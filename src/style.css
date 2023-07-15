@@ -27,6 +27,7 @@ nav {
     top: 0;
     right: 0;
     width: 59%;
+    box-shadow: 10px -10px 50px #e9e3e3;
 }
 
 .li {
@@ -63,8 +64,24 @@ h4 {
     color: gold;
 }
 
+h5 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: gold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
 h3 {
     color: tomato;
+}
+
+h2 {
+    margin-left: -25rem;
+    margin-bottom: 2rem;
+    color: tomato;
+
 }
 
 .icons {
@@ -83,7 +100,38 @@ img {
     height: 20px;
 }
 
-@media (max-width: 767px) {
+.menu {
+    background-color: rgb(240, 255, 255);
+    height: 100%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    height: 80%;
+    width: 50%;
+    column-gap: 3rem;
+    margin-left: -25rem;
+}
+
+.container > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
     nav {
         display: flex;
         justify-content: center;
@@ -101,6 +149,30 @@ img {
         left: 0;
         background-color: rgb(240, 255, 255, .5);
         width: 100%;
+    }
+
+    .menu{
+        overflow-y: scroll;
+        padding-bottom: 2rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        row-gap: 1rem;
+        margin-left: -5rem;
+    }
+
+
+    h2 {
+        margin-left: -5rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
     }
 }
 
