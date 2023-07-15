@@ -1,4 +1,4 @@
-import "./style.css"
+import "././style.css"
 import fbIcon from "./icons/facebook_4494479.png"
 import igIcon from "./icons/instagram_2111463.png"
 import twitterIcon from "./icons/twitter_4494477.png"
@@ -16,6 +16,7 @@ export default function renderHome() {
         let li = document.createElement('li');
         li.textContent = item;
         li.classList.add("li")
+        li.id = item
         nav.appendChild(li);
     });
 
