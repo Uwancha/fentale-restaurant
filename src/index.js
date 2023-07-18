@@ -1,5 +1,6 @@
 import renderHome from "./home";
 import renderMenu from "./menu";
+import { menuComponent } from "./menu";
 import { form } from "./reservation";
 import { contact } from "./contact";
 
@@ -23,12 +24,20 @@ rendernavBar();
 mainComponent(renderHome().main);
 
 const menu = document.querySelector("#Menu");
-
+/** 
 menu.addEventListener("click", () => {
     const app = document.querySelector(".app");
     app.innerHTML = "";
     mainComponent(renderMenu().menu);
 })
+**/
+menu.addEventListener("click", () => {
+    const app = document.querySelector(".app");
+    app.innerHTML = "";
+    app.insertAdjacentHTML('afterbegin', menuComponent);
+})
+
+
 
 const book = document.querySelector("#Reservation");
 
