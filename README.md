@@ -36,3 +36,8 @@ The page consists of a header, a navigation menu, and four sections: Home, Menu,
 ### Acknowledgements
 
 This project was built as part of The Odin Project's JavaScript full-stack web development curriculum. The Odin Project is a free, open-source curriculum for learning web development. You can learn more about The Odin Project and their curriculum [here ↗](https://www.theodinproject.com/).
+
+
+### Found this project useful?
+
+If you found this project useful, please consider giving it a ⭐️ and/or fork it. Thank you!
