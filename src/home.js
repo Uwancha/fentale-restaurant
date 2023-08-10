@@ -26,7 +26,7 @@ export default function renderHome() {
     const h4 = document.createElement("h3")
     restName.textContent = "Welcome to Fentale Restaurant";
     description.textContent = "We serve delicious Ethiopian and international cuisine made with fresh, locally-sourced ingredientsis.";
-    h4.textContent = "Come join us and discover the true essence of Ethiopian cuisine.";
+    h4.textContent = "Join Us and discover the true essence of Ethiopian cuisine.";
     description.classList.add("description")
     section.appendChild(restName);
     section.appendChild(description);
